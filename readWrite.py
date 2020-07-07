@@ -1,0 +1,21 @@
+helloFile = open('C:\\Users\\Karor\\Documents\\python\\boringstuff\\hello.txt', 'r')
+
+helloContent = helloFile.read()
+print(helloContent)
+helloFile.close()
+
+helloFile = open('C:\\Users\\Karor\\Documents\\python\\boringstuff\\hello.txt', 'a')
+helloFile.write('\nTo jest bekon')
+helloFile.close()
+helloFile = open('C:\\Users\\Karor\\Documents\\python\\boringstuff\\hello.txt', 'r')
+helloContent = helloFile.read()
+print(helloContent)
+helloFile.close()
+
+helloFile = open('C:\\Users\\Karor\\Documents\\python\\boringstuff\\hello.txt', 'w')
+helloFile.write('Witaj świecie, z powrotem!')
+helloFile.close()
+helloFile = open('C:\\Users\\Karor\\Documents\\python\\boringstuff\\hello.txt', 'r')
+helloContent = helloFile.read()
+print(helloContent)
+helloFile.close()
